@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML &amp; CSS Reference</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">Browser Basics</a>
+      <nav aria-label="Main navigation">
+        <a href="#text">Text</a>
+        <a href="#lists">Lists</a>
+        <a href="#table">Table</a>
+        <a href="#form">Form</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro">
+        <p class="eyebrow">A small rendering playground</p>
+        <h1>HTML &amp; CSS Reference</h1>
+        <p>
+          A simple page with common elements to help test your browser.
+          Resize the window, follow a link, or try the form controls.
+        </p>
+        <a class="button" href="#text">Explore the page</a>
+      </section>
+
+      <div class="content-grid">
+        <section class="card" id="text">
+          <h2>Text and inline elements</h2>
+          <p>
+            This is a paragraph with <strong>strong text</strong>,
+            <em>emphasized text</em>, and a <a href="#form">link to the form</a>.
+          </p>
+          <p>
+            Here is some <code>inline code</code>, a
+            <mark>highlight</mark>, and a line break:<br>
+            the next line starts here.
+          </p>
+          <blockquote>
+            <p>Good things take time to render.</p>
+            <cite>— A browser builder</cite>
+          </blockquote>
+        </section>
+
+        <section class="card" id="lists">
+          <h2>Lists</h2>
+          <h3>Things to render</h3>
+          <ul>
+            <li>Headings and paragraphs</li>
+            <li>Links and buttons</li>
+            <li>Lists and tables</li>
+          </ul>
+          <h3>Page checklist</h3>
+          <ol>
+            <li>Parse the document</li>
+            <li>Build the page tree</li>
+            <li>Apply styles</li>
+          </ol>
+        </section>
+
+        <section class="card card-wide" id="table">
+          <h2>A small table</h2>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Element</th>
+                <th scope="col">Purpose</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Page structure</td>
+                <td><code>&lt;h1&gt;</code></td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Visual styles</td>
+                <td><code>color: navy;</code></td>
+              </tr>
+              <tr>
+                <td>Link</td>
+                <td>Navigation</td>
+                <td><code>&lt;a&gt;</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="card card-wide" id="form">
+          <h2>Form controls</h2>
+          <form action="#" method="get">
+            <div class="form-grid">
+              <label>
+                Your name
+                <input type="text" name="name" placeholder="Ada Lovelace">
+              </label>
+              <label>
+                Favorite color
+                <select name="color">
+                  <option value="">Choose a color</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                  <option value="red">Red</option>
+                </select>
+              </label>
+              <label class="form-full">
+                A note
+                <textarea name="note" rows="3" placeholder="Write something..."></textarea>
+              </label>
+            </div>
+            <label class="checkbox-label">
+              <input type="checkbox" name="updates">
+              I like testing browser features
+            </label>
+            <button type="submit">Submit form</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Built with plain HTML and CSS. No scripts or external assets.</p>
+    </footer>
+  </body>
+</html>
